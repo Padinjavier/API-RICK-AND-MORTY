@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Lacquer&family=Nanum+Brush+Script&family=Reenie+Beanie&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root{
+	--font-family1: 'Nanum Brush Script', cursive;
+	--font-family2: 'Reenie Beanie', cursive;
+	--font-family3: 'Lacquer', cursive;
+}
+body {
+	background-color: rgb(35, 3, 41);
+	color: #f1f1f1;
+    height: 100vh;
+
+    background-image: url('../img/dd.jpg');
+    background-size: cover;
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+figure {
+	overflow:hidden;
+}
+img {
+	width: 100%;
+	max-width: 100%;
+	vertical-align: middle;
+	filter: blur(2px) grayscale(50%);
+}
+img:hover{
+	transform:scale(1.2) rotate(-10deg);
+	filter: blur(0px) grayscale(0%);
+} 
+.title{
+	display: flex;
+	justify-content: center;
+}
+h1 {
+	color: #66fb86;
+	margin: 40px 8%;
+	text-align: center;
+    font-family: var(--font-family1);
+    font-size: 80px;
+	width: auto;
+}
+h1:hover{
+    color:#00a2ff;
+    animation: title 1.5s ease-in-out infinite alternate;
+}
+@keyframes title {
+    from {
+      	text-shadow: 0 0 10px #f0f066,
+                 0 0 20px  #f1f130,
+                 0 0 30px  #1ef342,
+                 0 0 40px  #f1f130,
+                 0 0 70px  #1ef342,
+                 0 0 80px  #f1f130,
+                 0 0 100px #1ef342,
+                 0 0 150px #f1f130;
+    }
+    to {
+		text-shadow: 0 0 5px #ffff00,
+                0 0 10px #ffff00,
+                0 0 15px #1ef342,
+                0 0 20px #1ef342;
+    }
+}
+.characters {
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+	padding: 0 15%;
+	margin: 40px 0;
+}
+.characters h3 {
+	color: #73dd60;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-family: var(--font-family2);
+}
+.list{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+	gap: 40px;
+	display: none;
+}
+.character {
+	background: #1a042f;
+	border-radius: 8px;
+	overflow: hidden;
+}
+#list .character:hover{
+	animation: list 1.5s ease-in-out infinite alternate;
+}
+@keyframes list {
+    from {
+      	box-shadow: 0 0 10px #f0f066,
+                 0 0 20px  #f1f130,
+                 0 0 30px  #1ef342,
+                 0 0 40px  #f1f130,
+                 0 0 70px  #1ef342,
+                 0 0 80px  #f1f130;
+    }
+    to {
+		box-shadow: 0 0 5px #ffff00,
+                0 0 10px #ffff00,
+                0 0 15px #1ef342,
+                0 0 20px #1ef342;
+    }
+}
+.character h5 {
+	font-size: 15px;
+	color: #bebebe;
+}
+.character p {
+	font-size: 14px;
+	margin: 10px 0px;
+}
+.character h4 {
+	width: 100%;
+	height: 50px;
+	background: #000;
+	display: grid;
+	place-content: center;
+	font-family: var(--font-family1);
+	font-size: 20px;
+	text-shadow: rgb(255, 255, 255) 0px 5px 8px;
+}
+.info {
+	padding: 20px;
+	background-image: url('../img/fondo.gif');
+	width: 100%;
+	height: 100%;
+}
+.Alive,
+.unknown,
+.Dead {
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	background: #ccc;
+	display: block;
+}
+.Alive {
+	background: #01811d;
+}
+.Dead {
+	background: rgb(235, 38, 38);
+}
+.specie-one{
+	color: #3b58f7;
+	font-family: var(--font-family3);
+}
+.specie-two{
+	color: #0cce16;
+	font-family: var(--font-family3);
+}
+.specie-three{
+	color: #ce0c0c;
+	font-family: var(--font-family3);
+}
+
+
+.info-status {
+	display: flex;
+    width: 100%;
+    justify-content: space-between;
+    column-gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+.info-live{
+	display: flex;
+	width: 100%;
+    justify-content: flex-end;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.info-origin{
+	padding-top: 10px;
+	border-top: 1px solid red;
+}
+
+
+
+.menu-page{
+	position: fixed;
+	top: center;
+	right: 3%;
+}
+ul{
+	list-style: none;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+	text-align: center;
+}
+.button-menu{
+	margin: 15px 0px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	background: rgb(255, 255, 255);
+	color: rgb(11, 165, 18);
+	cursor: pointer;
+	font-family: var(--font-family3);
+}
+.list.active{
+	display: grid;
+}
+.contador p{
+	color: #0cce16;
+	font-family: var(--font-family3);
+	font-size: 16px;
+}
+@media screen and (min-width: 800px) {
+	body {
+		background-image: url('../img/fondo\ pc.jpg');
+		background-size: cover;
+		background-size: 150%;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-attachment: fixed;
+	}
+}
+@media screen and (min-width: 1000px) {
+	.characters{
+		padding: 0 6%;
+	}
+	.menu-page{
+		right: 2%;
+	}
+}

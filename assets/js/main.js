@@ -75,6 +75,30 @@ const renderCharacters = async (page=1) => {
 		if(character.species == 'Alien'){
 			addClass(spanspecies, 'specie-two')
 		}
+		if(character.species == 'Humanoid'){
+			addClass(spanspecies, 'specie-three')
+		}
+		if(character.species == 'unknown'){
+			addClass(spanspecies, 'specie-four')
+		}
+		if(character.species == 'Poopybutthole'){
+			addClass(spanspecies, 'specie-five')
+		}
+		if(character.species == 'Mythological Creature'){
+			addClass(spanspecies, 'specie-six')
+		}
+		if(character.species == 'Animal'){
+			addClass(spanspecies, 'specie-seven')
+		}
+		if(character.species == 'Robot'){
+			addClass(spanspecies, 'specie-eight')
+		}
+		if(character.species == 'Cronenberg'){
+			addClass(spanspecies, 'specie-nine')
+		}
+		if(character.species == 'Disease'){
+			addClass(spanspecies, 'specie-ten')
+		}
 		// ↓
 		const spanStatus = createElemet('span')
 		addClass(spanStatus, character.status)

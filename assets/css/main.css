@@ -150,20 +150,45 @@ h1:hover{
 .Dead {
 	background: rgb(235, 38, 38);
 }
+.info-status span{
+	font-family: var(--font-family3);
+}
 .specie-one{
 	color: #3b58f7;
-	font-family: var(--font-family3);
 }
 .specie-two{
 	color: #0cce16;
-	font-family: var(--font-family3);
 }
 .specie-three{
 	color: #ce0c0c;
-	font-family: var(--font-family3);
 }
-
-
+.specie-four{
+	color: #860571;
+}
+.specie-five{
+	color: #d46910;
+}
+.specie-six{
+	color: #10d4ca;
+}
+.specie-six{
+	color: #10d4ca;
+}
+.specie-six{
+	color: #10d4ca;
+}
+.specie-seven{
+	color: #c2445f;
+}
+.specie-eight{
+	color: #e7ca23;
+}
+.specie-nine{
+	color: #a6f368;
+}
+.specie-ten{
+	color: #a9f685;
+}
 .info-status {
 	display: flex;
     width: 100%;

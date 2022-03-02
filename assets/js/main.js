@@ -18,6 +18,7 @@ next.addEventListener('click', () =>{
 		renderCharacters(value)
 		console.log(value)
 	}
+	
 })
 prev.addEventListener('click', () =>{
 	if(value>1){

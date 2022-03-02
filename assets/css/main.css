@@ -39,15 +39,12 @@ img:hover{
 	justify-content: center;
 }
 h1 {
-	color: #66fb86;
 	margin: 40px 8%;
 	text-align: center;
     font-family: var(--font-family1);
     font-size: 80px;
 	width: auto;
-}
-h1:hover{
-    color:#00a2ff;
+	color:#00a2ff;
     animation: title 1.5s ease-in-out infinite alternate;
 }
 @keyframes title {
@@ -261,5 +258,13 @@ ul{
 	}
 	.menu-page{
 		right: 2%;
+	}
+	h1{
+		color: #66fb86;
+		animation: none;
+	}
+	h1:hover{
+    color:#00a2ff;
+    animation: title 1.5s ease-in-out infinite alternate;
 	}
 }
